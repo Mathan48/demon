@@ -16,6 +16,6 @@ phases:
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
       - "docker push 654654300116.dkr.ecr.us-east-1.amazonaws.com/gardener:latest"
-      - printf '[{"name":"gardener","imageUri":"%s"}]' 654654300116.dkr.ecr.us-east-1.amazonaws.com/gardener:latest > imagedefinitions.json
+      - printf '[{"name":"garderner","imageUri":"%s"}]' 654654300116.dkr.ecr.us-east-1.amazonaws.com/gardener:latest > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
