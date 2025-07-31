@@ -9,8 +9,8 @@ phases:
     commands:
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
-      - "docker build -t html-nginx ."
-      - "docker tag html-nginx:latest 654654300116.dkr.ecr.us-east-1.amazonaws.com/gardener:latest"
+      - "docker build -t demo ."
+      - "docker tag demo:latest 654654300116.dkr.ecr.us-east-1.amazonaws.com/gardener:latest"
   post_build:
     commands:
       - "echo Build completed on `date`"
