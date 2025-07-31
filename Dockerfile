@@ -1,5 +1,5 @@
-FROM centos:7
-RUN yum update -y && yum install -y httpd
+FROM almalinux:8
+RUN dnf install -y httpd
 COPY . /var/www/html/
 EXPOSE 80
 #httpdserver
